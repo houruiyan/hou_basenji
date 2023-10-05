@@ -336,8 +336,11 @@ class SeqNN():
     else:
       model = self.model
 
+    print(model)
+
     # compile with dense metrics
     num_targets = model.output_shape[-1]
+    print(num_targets)
 
     if loss_fn is None:
       loss_fn = loss_label
